@@ -1,0 +1,982 @@
+*{
+    Margin:0;
+   padding:0;
+
+}
+
+/*desktop*/
+
+/*Estilos inicio*/
+
+#gridInicio{
+    font-family: 'Josefin Sans', sans-serif;
+    display: grid;
+    background-color: #c5d6c2;
+    grid-template-areas: "header nav nav nav nav"
+                        "imagen imagen imagen imagen aside"
+                        "imagen imagen imagen imagen none"
+                        "footer  footer footer footer footer";
+grid-template-columns: 25% 18.33% 18.33% 18.34% 20%;
+}
+
+.section{
+    grid-area: imagen;
+    
+}
+.imagen1{
+    
+    background-image: url(https://symcontadores.com/wp-content/uploads/2021/01/que-es-un-estudio-contable-1024x683.jpg);
+    background-size: 100% 100%;
+    padding: 250px 100px;
+    margin: 0px 20px 10px 0px;
+    justify-items: center;
+}
+
+
+.imagen1 p {
+    display: flex;
+    border: solid;
+    font-weight: bold;
+    /*margin: 10px 165px*/;
+    padding: 10px;
+    width: 400px;
+    justify-items: center;
+    background-color: #E5E3C9;
+    opacity: 0.6;
+    color: #789395;
+    animation-name: img1;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes img1 {
+    from{transform: translate(0px);}
+    to{transform: translate(250px);}
+}
+.aside{
+    grid-area: aside;
+    background-color: #789395;
+    padding: 20px;
+    margin-top: 80px;
+    margin-right: 5px;
+}
+.ultNoticias h2:hover{
+    color: #B4CFB0;
+}
+.ultNoticias li:hover{
+    color: #B4CFB0;
+}
+
+.ultNoticias{
+    background-color: #789395;
+}
+.aside, li, a{
+    
+    text-decoration: none;
+    color: #D8D2CB;
+ list-style-type: none;
+ line-height: 1.6;
+}
+
+/*Estilos comunes a todas las paginas*/
+
+.header{
+    grid-area: header;  
+    background-color: #94B49F;
+    color: #E5E3C9;
+    padding: 25px;
+    
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo h1{
+    font-size: 400%;
+}
+
+.titulo h2{
+    font-size: 80%;
+}
+
+.nav{
+    grid-area: nav;
+    align-content: center;
+    background-color: #94B49F;
+    padding: 30px 120px;
+}
+
+.menu{
+    display: flex;
+    margin: 35px 30px;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.boton{
+    text-decoration: none;
+    color: #789395;
+    font-weight: bold;
+    transition: font-size 0.5s;
+}
+.boton:hover{
+    color: #E5E3C9;
+    font-size:x-large;
+    
+}
+
+
+.footer{
+    grid-area: footer;
+    background-color: #94B49F   ;
+    color: #D8D2CB; 
+    margin-top:0px;
+    padding: 15px;
+}
+
+.pie{
+    display: flex;
+    justify-content: space-between;
+}
+
+.direccion{
+    display: flex;
+    align-items: center;
+}
+
+.direccion p{
+    padding: 8px;
+}
+
+.derechos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    font-size: small;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    padding-top: 70px;
+    
+}
+.redes p{
+    display: flex;
+    justify-content: center;
+}
+.redes a img{
+    transition: width height 0.10s;
+    transition-delay: 2s;
+}
+.redes a img:hover{
+    width: 70px;
+    height: 80px;
+}
+
+
+/* Estilos seccion Nosotros*/
+
+#gridNosotros{
+    font-family: 'Josefin Sans', sans-serif;
+    display: grid;
+    background-color: #c5d6c2;
+    grid-template-areas: "header nav nav"
+                        "imagen imagen imagen"
+                        "nosotros nosotros nosotros"
+                        "valores valores valores"
+                        "footer  footer footer ";
+    grid-template-columns: 3fr 3fr 6fr;
+}
+
+#gridNosotros .header{
+    grid-area: header; 
+}
+
+#gridNosotros .nav{
+    grid-area: nav;
+}
+
+.imagen2{
+    grid-area: imagen;
+    background-image: url(https://www.esan.edu.pe/images/blog/2020/08/25/x1500x844-contabilidad-negocio.jpg.pagespeed.ic.-fWwZNLd65.webp);
+    background-size: 100% 100%;
+    height: 400px;
+}
+
+.imagen2 div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+    align-content: center;
+    margin-top: 150px;
+    width: 1000px;
+    animation-name: img2;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes img2 {
+    from{transform: translate(0px);}
+    to{transform: translate(450px);}
+}
+
+.imagen2 div h2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;  
+    border: solid;
+    width: 600px;
+    height: 50px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    color: #789395;
+    opacity: 0.65;
+    background-color:#D8D2CB;
+}
+
+.nosotros {
+    grid-area: nosotros;
+    background-color: #94B49F;
+    margin: 50px 0px;
+    padding: 40px 90px;
+}
+
+.nosotros div{
+    display: flex;
+}
+
+.nosotros1{
+    display: inline-block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 90px;
+    width: 490px;
+    margin: 10px;
+    justify-items: center;
+}
+
+.nosotros2{
+    padding-top: 20px;
+    padding-left: 90px;
+    margin: 10px;
+    width: 490px;
+}
+
+.nosotros h3{
+    color: #E5E3C9;
+    line-height: 1.7;
+}
+
+.nosotros1 p, .nosotros2 p { 
+    color: #D8D2CB;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.valores{
+    grid-area: valores;
+   background-color: #94B49F;
+    margin-bottom: 50px;
+    padding: 50px 30px;
+   line-height: 2.0; 
+}
+
+.valores h3{
+    color: #E5E3C9;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.valores div ul{
+    display: flex;
+    color: #D8D2CB;
+    padding: 0px 30px;
+    justify-content: space-around;  
+}
+.valores div ul li:hover{
+    /*color: #E5E3C9;*/
+    font-size:x-large;
+    
+}
+
+#gridNosotros .footer{
+    grid-area: footer;
+    background-color: #94B49F;
+}
+
+/*Estilos seccion Servicios*/
+#gridServicios{
+    font-family: 'Josefin Sans', sans-serif;
+    display: grid;
+    background-color: #B4CFB0;
+    grid-template-areas: "header nav nav"
+                        "imagen imagen imagen"
+                        "servicios servicios servicios"
+                        "ppales ppales ppales"
+                        "footer  footer footer ";
+    grid-template-columns: 3fr 3fr 6fr;
+}
+
+#gridServicios .header{
+    grid-area: header; 
+}
+
+#gridServicios .nav{
+    grid-area: nav;
+}
+
+.servicios
+{
+    grid-area: servicios;
+    background-color: #94B49F;
+    margin: 50px 0px;
+    padding: 40px 90px;
+}
+
+.servicios div{
+   display: flex;
+}
+
+.servicios1{
+   display: inline-block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 90px;
+    width: 490px;
+    margin: 10px;
+    justify-items: center;
+}
+
+.servicios2{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 30px;
+    margin: 10px;
+    width: 490px;
+}
+.servicios h3, .servicios h4{
+    color: #E5E3C9;
+    line-height: 1.7;
+}
+
+.servicios p {
+    color: #D8D2CB;
+    line-height: 1.5;
+}
+
+
+.ppalesServicios{
+    grid-area: ppales;
+    background-color: #94B49F;
+    margin-bottom: 50px;
+    padding: 50px 30px;
+    line-height: 2.0; 
+}
+
+.ppalesServicios h3{
+    color: #E5E3C9;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.ppalesServicios div ul{
+    display: flex;
+    color: #D8D2CB;
+    padding: 0px 20px;
+    justify-content: space-around;  
+}
+
+/*Estilos seccion Noticias*/
+#gridNoticias{
+    font-family: 'Josefin Sans', sans-serif;
+    display: grid;
+    background-color: #B4CFB0;
+    grid-template-areas: "header nav nav"
+                        "imagen imagen imagen"
+                        "noticias noticias noticias"
+                        "footer  footer footer ";
+    grid-template-columns: 3fr 3fr 6fr;
+}
+
+#gridNosotros .header{
+    grid-area: header;
+}
+
+#gridNosotros .nav{
+    grid-area: nav;
+}
+
+.imagen3{
+    grid-area: imagen;
+    background-image: url(https://www.openenglish.com/blog/es/wp-content/uploads/sites/2/2016/06/ESCUCHAR-NOTICAS-EN-INGLES.jpg);
+    background-size: 100% 100%;
+    height: 400px;
+}
+
+.imagen3 div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+    align-content: center;
+    margin-top: 150px;
+    width: 1000px;
+    animation-name: img3;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes img3 {
+    from{transform: translate(0px);}
+    to{transform: translate(450px);}
+}
+
+.imagen3 div h2 {
+    display: flex;  
+    border: solid;
+    width: 600px;
+    height: 50px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    color: #789395;
+    opacity: 0.65;
+    background-color:#D8D2CB;
+}
+.noticias{
+    grid-area: noticias;
+    
+    margin-bottom: 50px;
+}
+
+.noticias div {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.noticia{
+    background-color: #94B49F;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px;
+    padding: 10px;
+    /*border: solid #E5CB9F;*/
+    transition: font-size 0.5s;
+}
+
+.noticia:hover{
+    font-size: 150%;
+}
+.noticia h3{
+    color: #E5E3C9;
+    margin: 10px 0px 20px 0px;
+    
+}
+.noticia h4{
+    color: #D8D2CB;
+    margin-bottom: 5px;
+}
+
+
+/*Seccion Contacto*/
+
+#gridContacto{
+    font-family: 'Josefin Sans', sans-serif;
+    display: grid;
+    background-color: #B4CFB0;
+    grid-template-areas: "header nav nav"
+                        "formulario formulario informacion "
+                        
+                        "footer  footer footer ";
+    grid-template-columns: 3fr 3fr 6fr;
+}
+
+#gridContacto .header{
+    grid-area: header;
+}
+
+#gridContacto .nav{
+    grid-area: nav;
+}
+
+.formulario{
+    grid-area: formulario;
+    background-color: #94B49F;
+    margin: 20px;
+    padding: 20px;
+    
+}
+
+.formulario h3{
+    color: #E5E3C9;
+    margin: 10px 0px 20px 0px;
+    text-align: center;
+    
+}
+
+
+.informacion{
+    grid-area: informacion;
+    margin: 30px;
+}
+
+.contacto{
+    margin: 5px;
+}
+.contacto h3{
+    color: #E5E3C9;
+    line-height: 2.0;
+}
+.contacto p{
+    line-height: 1.5;
+    font-style: italic;
+}
+
+
+/*estilos login*/
+
+#gridLogin{
+    font-family: 'Josefin Sans', sans-serif;
+    display: grid;
+    background-color: #B4CFB0;
+    grid-template-areas: "header nav nav"
+                        "formulario formulario informacion "
+                        "footer  footer footer ";
+    grid-template-columns: 3fr 3fr 6fr;
+}
+
+#gridLogin .header{
+    grid-area: header;
+}
+
+#gridLogin .nav{
+    grid-area: nav;
+}
+
+
+#gridLogin .formulario{
+    grid-area: formulario;
+    margin: 20px 20px 125px 200px;
+    
+}
+
+#gridLogin .informacion{
+    padding-top: 20px;
+    font-style: italic;
+
+}
+/*responsive*/
+
+@media screen and (min-width: 0px) and (max-width: 767px){
+
+    /*inicio*/
+
+    #gridInicio{
+        display: grid;
+        grid-template-areas: "header nav"
+                             "imagen imagen"
+                             "aside aside"
+                             "footer footer";
+    grid-template-columns: 8fr 4fr;
+    background-color: white;
+    }
+
+    .section{
+        grid-area: imagen; 
+    }
+
+    .imagen1{
+        background-image: url(https://symcontadores.com/wp-content/uploads/2021/01/que-es-un-estudio-contable-1024x683.jpg);
+        background-size: 100% 100%;
+        width: auto;
+        height: 400px;
+        padding: 10px;
+        margin: 0px;
+        display: flex;
+        /*align-items: center;*/
+        justify-content: center;
+    }
+
+    .imagen1 p {       
+       width: 250px;
+       height: 50px;
+        border: solid;
+        font-weight: bold;
+        margin: 0px;
+        padding: 10px;
+        background-color: E5E3C9;
+        opacity: 0.65;
+        color: #789395; 
+    }
+
+    @keyframes img1 {
+        from{transform: translateY(0px);}
+        to{transform: translateY(150px);}
+    }
+    
+    .aside{
+        grid-area: aside;
+        display: none;
+    }
+
+
+    /*comun a todas las paginas*/
+
+    .header{
+        grid-area: header;
+        padding: 30px;
+        justify-content: start;
+        height: 145px;
+    }
+
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .nav{
+        grid-area: nav;
+        align-items: end;
+        margin: 0px;
+        padding: 20px 10px 10px 10px;
+        height: 175px;
+        width: auto;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-items: end;
+        list-style: none;
+        margin: 0px;
+    }
+    
+    .footer{
+        grid-area: footer;
+    }
+
+    .pie{
+        display: block;  
+    }
+
+    .direccion{
+        display: block;
+        justify-items: center;
+    }
+
+    .direccion iframe{
+        display: none;
+    }
+
+    .direccion p{
+        text-align: center;
+    }
+
+    .redes {
+        padding-top: 10px;
+    }
+
+    .derechos {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    /*Nosotros*/
+
+    #gridNosotros{
+        display: grid;
+        grid-template-areas: "header nav"
+                             "imagen imagen"
+                             "nosotros nosotros"
+                             "valores valores"
+                             "footer footer";
+    grid-template-columns: 8fr 4fr;
+    background-color: white;
+    }
+
+    .imagen2{
+        grid-area: imagen;
+        height: 200px;
+        
+        
+    }
+
+    .imagen2 div{
+        
+        margin: 0px 15px 0px 15px;
+        justify-items: center;
+        width: auto; 
+    }
+  
+    
+
+    @keyframes img2 {
+        from{transform: translateY(0px);}
+        to{transform: translateY(80px);}
+    }
+
+    .nosotros{
+        grid-area: nosotros;
+        background-color: #c5d0c4;
+        margin: 0px;
+        padding: 40px;
+    }
+
+    .nosotros div{
+        display: block;
+        
+    }
+    
+    .nosotros h3{
+        color: #789395;
+    }
+
+    .nosotros1{
+        display: block;
+        padding-left: 0px;
+        padding-right: 30px;
+        width: auto;
+        margin: 0px;
+        justify-items: center;
+    }
+
+    .nosotros2{
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 30px;
+        margin: 0px;
+        width: auto;
+    }
+
+    .nosotros1 p, .nosotros2 p { 
+        color:aliceblue;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    .valores{  
+        grid-area: valores;
+       background-color:#c5d0c4;
+        margin-bottom: 0px;
+        padding: 20px;
+       line-height: 2.0;
+    }
+
+    .valores h3{
+        color:#789395;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    
+    .valores div ul{
+        
+        flex-direction: column;
+
+    }
+    
+    .valores li{
+        color: aliceblue;
+       text-align: center;
+    }
+
+    /*Servicios*/
+    #gridServicios{
+        display: grid;
+        grid-template-areas: "header nav"
+                             "imagen imagen"
+                             "servicios servicios"
+                             "ppales ppales"
+                             "footer footer";
+    grid-template-columns: 8fr 4fr;
+    background-color: white;
+    }
+
+    .servicios{
+        grid-area: servicios;
+        background-color: #c5d0c4;
+        margin: 0px;
+        padding: 40px;
+    }
+
+    .servicios div{
+        display: block;
+    }
+
+    .servicios h3, .servicios h4{
+        color:#789395;
+    }
+
+    .servicios1{
+        display: block;
+        padding-left: 0px;
+        padding-right: 30px;
+        width: auto;
+        margin: 0px;
+        justify-items: center;
+    }
+
+    .servicios2{
+        padding-top: 15px;
+        padding-left: 0px;
+        padding-right: 30px;
+        margin: 0px;
+        width: auto;
+    }
+
+    .servicios1 p, .servicios2 li { 
+        color:aliceblue;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    .ppalesServicios{
+        grid-area: ppales;
+        background-color:#c5d0c4;
+         margin-bottom: 0px;
+         padding: 20px;
+        line-height: 2.0;
+    }
+ 
+     .ppalesServicios h3{
+         color:#789395;
+         text-align: center;
+         padding-bottom: 5px;
+     }
+     
+     .ppalesServicios div ul{
+         
+         flex-direction: column;
+     }
+     
+     .ppalesServicios li{
+         color: aliceblue;
+        text-align: center;
+     }
+
+ /*Noticias*/
+
+ #gridNoticias{
+    display: grid;
+    grid-template-areas: "header nav"
+                         "imagen imagen"
+                         "noticias noticias"
+                         "footer footer";
+grid-template-columns: 8fr 4fr;
+background-color: white;
+
+}
+
+.imagen3{
+    grid-area: imagen;
+    height: 200px;
+}
+
+.imagen3 div{
+    margin: 0px 15px 0px 15px;
+    justify-items: center;
+    width: auto; 
+}
+
+@keyframes img3 {
+    from{transform: translateY(0px);}
+    to{transform: translateY(80px);}
+}
+
+.noticias{
+    grid-area: noticias;
+    margin-bottom: 0px;
+    background-color: #c5d0c4;
+    padding-top: 20px;
+}
+
+.noticia{
+    /*border: solid #398AB9;*/
+    color:aliceblue;
+    margin: 10px 20PX;
+}
+.noticia h3{
+    color:#E5E3C9;
+}
+.noticia h4{
+    color: black;
+}
+.noticia a{
+    color: black;
+}
+
+/*contacto*/
+#gridContacto{
+    display: grid;
+    grid-template-areas: "header nav"
+                         "formulario formulario"
+                         "informacion informacion"
+                         "footer footer";
+    grid-template-columns: 8fr 4fr;
+background-color:#c5d0c4;
+/*width: min-content;*/
+}
+
+/*#gridContacto .nav{
+    width: auto;
+}*/
+
+.formulario{
+    grid-area: formulario;
+    padding: 10px;
+    margin: 50px 20px;
+
+}
+
+.formulario div form div{
+    display: flex;
+    flex-direction: column;
+}
+
+.informacion{
+    grid-area: informacion;
+    margin-top: 0px;
+}
+
+
+
+/*login*/
+
+#gridLogin{
+    display: grid;
+    grid-template-areas: "header nav"
+                         "formulario formulario"
+                         "informacion informacion"
+                         "footer footer";
+grid-template-columns: 8fr 4fr;
+background-color:#c5d0c4;
+
+}
+
+
+#gridLogin .formulario{
+    margin: 60px  50px;
+}
+#gridLogin .informacion{
+    padding: 0px;
+    margin-bottom: 150px;
+}
+}
+
